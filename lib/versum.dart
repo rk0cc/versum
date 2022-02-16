@@ -1,3 +1,3 @@
 library versum;
 
-export 'version.dart';
+export 'src/semver.dart';
