@@ -138,6 +138,12 @@ class SemVer implements Comparable<SemVer> {
   /// Compare another [SemVer] that is lower than [o].
   bool operator <(SemVer o) => compareTo(o) < 0;
 
+  /// Compare another [SemVer] does meet [>] or [==].
+  bool operator >=(SemVer o) => compareTo(o) >= 0;
+
+  /// Compare another [SemVer] does meet [<] or [==]/
+  bool operator <=(SemVer o) => compareTo(o) <= 0;
+
   /// Convert [SemVer] to readable [String].
   @override
   String toString() {
