@@ -41,6 +41,7 @@ extension _VersionConstraintOperator on VersionConstraintOperator {
   bool matched(SemVer constraint, SemVer provided, bool excludePreRelease) {
     if (excludePreRelease &&
         constraint.preRelease == null &&
+        provided.preRelease != null &&
         _sameVersion(constraint, provided)) return false;
     switch (this) {
       case VersionConstraintOperator.greater:

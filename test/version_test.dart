@@ -23,4 +23,9 @@ void main() {
           greaterThan(SemVer.parse("3.6.9-alpha")));
     });
   });
+  test("Throw exception when parsing invalid semver", () {
+    expect(() => SemVer.parse("1.2"), throwsA(isA<InvalidSemVerException>()));
+    expect(() => SemVer.parse("lolol"), throwsA(isA<InvalidSemVerException>()));
+    expect(() => SemVer.parse("1.s.3"), throwsA(isA<InvalidSemVerException>()));
+  });
 }

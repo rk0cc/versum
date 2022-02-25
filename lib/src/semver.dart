@@ -36,8 +36,8 @@ class SemVer implements Comparable<SemVer> {
   /// is invalid.
   factory SemVer(
       {required int major,
-      required int minor,
-      required int patch,
+      int minor = 0,
+      int patch = 0,
       String? preRelease,
       String? build}) {
     SemVer sv = SemVer._(major, minor, patch, preRelease, build);
@@ -180,6 +180,6 @@ class InvalidSemVerException implements Exception {
   /// invalid [SemVer] [String].
   @override
   String toString() {
-    return "InvalidaSemVerException: ${message}\n\nApplied versioning: ${_isv}\n\n";
+    return "InvalidSemVerException: ${message}\n\nApplied versioning: ${_isv}\n\n";
   }
 }
