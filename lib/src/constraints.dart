@@ -203,10 +203,6 @@ abstract class VersionConstraint<B extends MultipleVersionConstraintNode> {
         assert(emptyAsAny || constraintsContainer.constraintsItems > 0,
             "Applied empty constraint item but not empty as any.");
 
-  /// Construct [VersionConstraint] by giving a [String] of [rawConstraint].
-  @protected
-  external factory VersionConstraint.parse(String? rawConstraint);
-
   /// Give a [version] that is stastified [rawConstraint] by matching data in
   /// [B].
   ///

@@ -1,10 +1,11 @@
 name: versum
 description: Modulized version constraint that specify implementation for different package system in Dart.
+repository: https://github.com/rk0cc/versum
 version: 1.0.0-beta.1
 environment: 
   sdk: '>=2.16.0 <3.0.0'
 dependencies:
-  meta: ^1.7.0
+  meta: '>=1.7.0 <1.8.0'
   quiver: ^3.0.1+1
 dev_dependencies:
-  test: ^1.20.1
+  test: '>=1.20.1 <1.21.0'
