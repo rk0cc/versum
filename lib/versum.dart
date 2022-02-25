@@ -1,3 +1,4 @@
+/// Basic library which provides to accessing version and constraint data.
 library versum;
 
 export 'src/semver.dart';
