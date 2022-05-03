@@ -1,5 +1,6 @@
 # Customizable version constraint policy
 [![badge](https://img.shields.io/pub/v/versum?include_prereleases&style=flat-square)](https://pub.dev/packages/versum)
+![GitHub Sponsors](https://img.shields.io/github/sponsors/rk0cc)
 
 Versum allows to custom define version constraint policy depending package manager.
 
